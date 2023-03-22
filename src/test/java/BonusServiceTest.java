@@ -48,6 +48,7 @@ public class BonusServiceTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void shouldCalculateForUnregisteredAndUnderLimit() {
         BonusService service = new BonusService();
@@ -60,6 +61,7 @@ public class BonusServiceTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void shouldCalculateForUnregisteredAndMinReceipt() {
         BonusService service = new BonusService();
@@ -72,6 +74,7 @@ public class BonusServiceTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void shouldCalculateForRegisteredAndMinReceipt() {
         BonusService service = new BonusService();
@@ -84,6 +87,7 @@ public class BonusServiceTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void shouldCalculateForRegisteredAndEqualLimit() {
         BonusService service = new BonusService();
@@ -96,6 +100,7 @@ public class BonusServiceTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void shouldCalculateForUnregisteredAndEqualLimit() {
         BonusService service = new BonusService();
